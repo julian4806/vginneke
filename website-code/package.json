@@ -1,0 +1,11 @@
+{
+  "name": "vanginnekearchitectuur",
+  "version": "1.0.0",
+  "description": "Van Ginneke architectuur website",
+  "main": "index.js",
+  "scripts": {
+    "sass": "sass --watch sass:dist/assets/css"
+  },
+  "author": "Julian van Husen",
+  "license": "ISC"
+}
