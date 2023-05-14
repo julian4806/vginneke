@@ -1,0 +1,104 @@
+@use "../abstracts/variables" as *;
+@use "../base/fonts" as *;
+
+.header {
+  width: 100%;
+  background-color: $secondary-color;
+  position: sticky;
+  top: 0;
+
+  & > .navigation {
+    display: flex;
+    width: 100%;
+    justify-content: space-between;
+    align-items: center;
+    height: 64px;
+    padding: 0 40px;
+
+    // Logo
+    & > .logo {
+      height: 100%;
+      padding: 10px 0;
+    }
+
+    // Menu items
+    // & > .nav-items,
+    & > .contact {
+      display: none;
+    }
+  }
+}
+
+// DESKTOP NAV
+@media (min-width: 761px) {
+  .header {
+    & > .navigation {
+      // Menu items
+      & > .nav-items {
+        display: flex;
+        gap: 20px;
+        list-style: none;
+      }
+
+      & > .nav-items {
+        & > .item {
+          & > .link {
+            color: $primary-color;
+          }
+        }
+        & > .item-contact {
+          display: none;
+        }
+      }
+
+      & > .contact {
+        display: block;
+      }
+
+      & > .hamburger {
+        display: none;
+      }
+    }
+  }
+}
+
+// MOBILE NAV
+@media (max-width: 760px) {
+  .header {
+    & > .navigation {
+      & > .nav-items {
+        position: fixed;
+        display: flex;
+        // display: none;
+        flex-direction: column;
+        padding: 10px 0;
+        gap: 10px;
+        top: 64px;
+        background-color: $primary-color;
+        width: 100%;
+        left: 0;
+        text-align: center;
+
+        & > .item {
+          & > .link {
+            color: $secondary-color;
+          }
+        }
+      }
+
+      & > .hamburger {
+        display: flex;
+        flex-direction: column;
+        padding: 4px;
+        gap: 4px;
+
+        & > .line {
+          width: 12.5px;
+          height: 2px;
+          border-radius: 5px;
+          background-color: $secondary-color;
+        }
+      }
+    }
+  }
+}

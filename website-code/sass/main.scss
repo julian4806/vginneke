@@ -1,3 +1,8 @@
-// Should only contain uses
+// Standards
+@use "../sass/layout/container";
 @use "../sass/base/reset";
 @use "../sass/base/fonts";
+
+// Website Components
+@use "../sass/layout/navigation";
+@use "../sass/layout/hero";
