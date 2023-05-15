@@ -42,3 +42,12 @@ sass/
 | |– \_jquery-ui.scss // jQuery UI
 |
 `– main.scss // Main Sass file
+
+<!-- Hoe moet de nav eruit zien? -->
+
+home
+projecten
+ontwerp (= huidige ontwerp, begeleiding en advies. Onder 1 menu-item)
+profiel
+algemeen
+contact

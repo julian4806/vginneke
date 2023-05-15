@@ -1,3 +1,36 @@
+@use "../abstracts/mixins" as mixin;
+@use "../abstracts/variables" as variables;
+
 .hero {
-  background-color: red;
+  @include mixin.cut-corner;
+  display: flex;
+  gap: 20px;
+  background-color: lightblue;
+  padding: 40px;
+
+  // linker kant van de hero
+  .hero__info {
+    width: 60%;
+    @include mixin.center-left;
+
+    .hero__info--title {
+      font-size: variables.$size-heading;
+      background-color: none;
+    }
+
+    .hero__info--paragraph {
+      font-size: variables.$size-sub-text;
+      margin: 20px 0;
+    }
+  }
+
+  // rechter kant van de hero
+  .hero__banner {
+    width: 40%;
+
+    .hero__banner--banner {
+      width: 100%;
+      @include mixin.cut-corner;
+    }
+  }
 }

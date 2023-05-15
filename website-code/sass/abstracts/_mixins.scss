@@ -1,0 +1,27 @@
+@use "../abstracts/variables" as variables;
+
+@mixin cut-corner {
+  -webkit-clip-path: polygon(
+    0 0,
+    calc(100% - variables.$corner-radius) 0,
+    100% variables.$corner-radius,
+    100% 100%,
+    0 100%
+  );
+  clip-path: polygon(
+    0 0,
+    calc(100% - variables.$corner-radius) 0,
+    100% variables.$corner-radius,
+    100% 100%,
+    0 100%
+  );
+}
+
+@mixin center-left {
+  display: flex;
+  align-items: flex-start;
+  flex-direction: column;
+  justify-content: center;
+}
+
+//   @include cut-corner;

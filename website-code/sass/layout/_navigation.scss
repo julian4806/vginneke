@@ -1,11 +1,12 @@
-@use "../abstracts/variables" as *;
+@use "../abstracts/variables" as variables;
 @use "../base/fonts" as *;
 
 .header {
   width: 100%;
-  background-color: $secondary-color;
+  background-color: variables.$secondary-color;
   position: sticky;
   top: 0;
+  z-index: 9999;
 
   & > .navigation {
     display: flex;
@@ -43,7 +44,7 @@
       & > .nav-items {
         & > .item {
           & > .link {
-            color: $primary-color;
+            color: variables.$primary-color;
           }
         }
         & > .item-contact {
@@ -74,14 +75,14 @@
         padding: 10px 0;
         gap: 10px;
         top: 64px;
-        background-color: $primary-color;
+        background-color: variables.$primary-color;
         width: 100%;
         left: 0;
         text-align: center;
 
         & > .item {
           & > .link {
-            color: $secondary-color;
+            color: variables.$secondary-color;
           }
         }
       }
@@ -96,7 +97,7 @@
           width: 12.5px;
           height: 2px;
           border-radius: 5px;
-          background-color: $secondary-color;
+          background-color: variables.$secondary-color;
         }
       }
     }

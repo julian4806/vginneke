@@ -1,0 +1,30 @@
+@use "../abstracts/mixins" as mixin;
+@use "../abstracts/variables" as variables;
+
+.content {
+  display: flex;
+  gap: 20px;
+  padding: 40px;
+
+  // left side of the content section
+  .content__banner {
+    width: 45%;
+
+    .content__banner--banner {
+      width: 100%;
+    }
+  }
+
+  // right side of the content section
+  .content__info {
+    width: 55%;
+    @include mixin.center-left;
+
+    .content__info--title {
+      font-size: variables.$size-sub-heading;
+    }
+    .content__info--paragraph {
+      font-size: variables.$size-sub-text;
+    }
+  }
+}
