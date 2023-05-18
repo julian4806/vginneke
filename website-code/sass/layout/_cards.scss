@@ -1,0 +1,29 @@
+@use "../abstracts/variables" as *;
+
+.cards {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 20px;
+//   padding: 40px;
+
+  & > :nth-child(even) {
+    margin-top: 80px;
+  }
+  .cards__card {
+
+    .cards__card--title,
+    .cards__card--paragraph {
+      background-color: $secondary-color;
+      border-left: 4px solid;
+      padding: 10px;
+    }
+
+    .cards__card--title {
+      padding-bottom: 0;
+      font-size: $size-sub-heading;
+    }
+    .cards__card--paragraph {
+      font-size: $size-sub-text;
+    }
+  }
+}

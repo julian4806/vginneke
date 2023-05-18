@@ -5,8 +5,8 @@
   @include mixin.cut-corner;
   display: flex;
   gap: 20px;
-  background-color: lightblue;
-  padding: 40px;
+  background-color: variables.$secondary-color;
+  // padding: 40px;
 
   // linker kant van de hero
   .hero__info {

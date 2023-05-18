@@ -2,6 +2,7 @@
 .container {
   max-width: 800px;
   margin: 0 auto;
+  padding: 40px;
 }
 
 *,
@@ -102,8 +103,7 @@ button {
   clip-path: polygon(0 0, calc(100% - 40px) 0, 100% 40px, 100% 100%, 0 100%);
   display: flex;
   gap: 20px;
-  background-color: lightblue;
-  padding: 40px;
+  background-color: #a4bcc2;
 }
 .hero .hero__info {
   width: 60%;
@@ -129,10 +129,47 @@ button {
   clip-path: polygon(0 0, calc(100% - 40px) 0, 100% 40px, 100% 100%, 0 100%);
 }
 
+.cards {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 20px;
+}
+.cards > :nth-child(even) {
+  margin-top: 80px;
+}
+.cards .cards__card .cards__card--title,
+.cards .cards__card .cards__card--paragraph {
+  background-color: #a4bcc2;
+  border-left: 4px solid;
+  padding: 10px;
+}
+.cards .cards__card .cards__card--title {
+  padding-bottom: 0;
+  font-size: 20px;
+}
+.cards .cards__card .cards__card--paragraph {
+  font-size: 10px;
+}
+
+.footer {
+  display: flex;
+  flex-direction: column;
+  background-color: #a4bcc2;
+  gap: 20px;
+}
+.footer > .footer__contact {
+  display: flex;
+  justify-content: space-between;
+}
+.footer > .footer__socials {
+  display: flex;
+  justify-content: center;
+  gap: 20px;
+}
+
 .content {
   display: flex;
   gap: 20px;
-  padding: 40px;
 }
 .content .content__banner {
   width: 45%;

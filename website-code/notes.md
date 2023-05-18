@@ -43,8 +43,8 @@ sass/
 |
 `– main.scss // Main Sass file
 
+http://www.vanginnekearchitectuur.nl/
 <!-- Hoe moet de nav eruit zien? -->
-
 home
 projecten
 ontwerp (= huidige ontwerp, begeleiding en advies. Onder 1 menu-item)
