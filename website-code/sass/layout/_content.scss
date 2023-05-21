@@ -4,11 +4,17 @@
 .content {
   display: flex;
   gap: 20px;
-  // padding: 40px;
+
+  @media (max-width: variables.$breakpoint-medium) {
+    flex-direction: column;
+    align-items: center;
+  }
 
   // left side of the content section
   .content__banner {
-    width: 45%;
+    @media (min-width: variables.$breakpoint-medium) {
+      width: 45%;
+    }
 
     .content__banner--banner {
       width: 100%;
@@ -17,7 +23,10 @@
 
   // right side of the content section
   .content__info {
-    width: 55%;
+    @media (min-width: variables.$breakpoint-medium) {
+      width: 55%;
+    }
+    
     @include mixin.center-left;
 
     .content__info--title {

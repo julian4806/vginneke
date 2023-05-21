@@ -6,11 +6,17 @@
   display: flex;
   gap: 20px;
   background-color: variables.$secondary-color;
+  
+  @media (max-width: variables.$breakpoint-medium) {
+    flex-direction: column-reverse;
+  }
   // padding: 40px;
 
   // linker kant van de hero
   .hero__info {
-    width: 60%;
+    @media (min-width: variables.$breakpoint-medium) {
+      width: 60%;
+    }
     @include mixin.center-left;
 
     .hero__info--title {
@@ -26,7 +32,10 @@
 
   // rechter kant van de hero
   .hero__banner {
-    width: 40%;
+    @media (min-width: variables.$breakpoint-medium) {
+      width: 40%;
+    }
+    margin: 0 auto;
 
     .hero__banner--banner {
       width: 100%;

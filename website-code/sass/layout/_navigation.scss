@@ -31,7 +31,7 @@
 }
 
 // DESKTOP NAV
-@media (min-width: 761px) {
+@media (min-width: variables.$breakpoint-medium) {
   .header {
     & > .navigation {
       // Menu items
@@ -64,7 +64,7 @@
 }
 
 // MOBILE NAV
-@media (max-width: 760px) {
+@media (max-width: variables.$breakpoint-medium) {
   .header {
     & > .navigation {
       & > .nav-items {

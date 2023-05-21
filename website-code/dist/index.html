@@ -7,6 +7,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Home</title>
     <link rel='stylesheet' href='assets/css/main.css'>
+    <script src='assets/js/navbar.js' defer></script>
 </head>
 
 <body>
@@ -14,7 +15,7 @@
     <header class="header">
         <nav class="navigation container">
             <img src="assets/images/example.svg" class="logo" alt="">
-            <ul class="nav-items">
+            <ul class="nav-items" style="display: flex;">
                 <li class="item">
                     <a href="" class="link">Agency</a>
                 </li>
@@ -50,7 +51,7 @@
             <button class="hero__info--button">Get started</button>
         </div>
         <div class="hero__banner">
-            <img src="./assets/images/home-banner.jpg" alt="" class="hero__banner--banner">
+            <img src="./assets/images/logo.png" alt="" class="hero__banner--banner">
         </div>
     </div>
 
@@ -72,62 +73,107 @@
     <!-- Cards -->
     <div class="cards container">
         <div class="cards__card">
-            <h2 class="cards__card--title">Title Here</h2>
-            <p class="cards__card--paragraph">
-                Lorem ipsum dolor sit amet consectetur adipisicing elit. Perferendis debitis eos delectus hic qui
-                obcaecati natus aperiam repellendus laborum minus!
-            </p>
+            <div class="cards__card--wrapper">
+                <h2 class="cards__card--title">Title Here</h2>
+                <p class="cards__card--paragraph">
+                    Lorem ipsum dolor sit amet consectetur adipisicing elit. Perferendis debitis eos delectus hic qui
+                    obcaecati natus aperiam repellendus laborum minus!
+                </p>
+            </div>
         </div>
         <div class="cards__card">
-            <h2 class="cards__card--title">Title Here</h2>
-            <p class="cards__card--paragraph">
-                Lorem ipsum dolor sit amet consectetur adipisicing elit. Perferendis debitis eos delectus hic qui
-                obcaecati natus aperiam repellendus laborum minus!
-            </p>
+            <div class="cards__card--wrapper">
+                <h2 class="cards__card--title">Title Here</h2>
+                <p class="cards__card--paragraph">
+                    Lorem ipsum dolor sit amet consectetur adipisicing elit. Perferendis debitis eos delectus hic qui
+                    obcaecati natus aperiam repellendus laborum minus!
+                </p>
+            </div>
         </div>
         <div class="cards__card">
-            <h2 class="cards__card--title">Title Here</h2>
-            <p class="cards__card--paragraph">
-                Lorem ipsum dolor sit amet consectetur adipisicing elit. Perferendis debitis eos delectus hic qui
-                obcaecati natus aperiam repellendus laborum minus!
-            </p>
+            <div class="cards__card--wrapper">
+                <h2 class="cards__card--title">Title Here</h2>
+                <p class="cards__card--paragraph">
+                    Lorem ipsum dolor sit amet consectetur adipisicing elit. Perferendis debitis eos delectus hic qui
+                    obcaecati natus aperiam repellendus laborum minus!
+                </p>
+            </div>
         </div>
         <div class="cards__card">
-            <h2 class="cards__card--title">Title Here</h2>
-            <p class="cards__card--paragraph">
-                Lorem ipsum dolor sit amet consectetur adipisicing elit. Perferendis debitis eos delectus hic qui
-                obcaecati natus aperiam repellendus laborum minus!
-            </p>
+            <div class="cards__card--wrapper">
+                <h2 class="cards__card--title">Title Here</h2>
+                <p class="cards__card--paragraph">
+                    Lorem ipsum dolor sit amet consectetur adipisicing elit. Perferendis debitis eos delectus hic qui
+                    obcaecati natus aperiam repellendus laborum minus!
+                </p>
+            </div>
         </div>
         <div class="cards__card">
-            <h2 class="cards__card--title">Title Here</h2>
-            <p class="cards__card--paragraph">
-                Lorem ipsum dolor sit amet consectetur adipisicing elit. Perferendis debitis eos delectus hic qui
-                obcaecati natus aperiam repellendus laborum minus!
-            </p>
+            <div class="cards__card--wrapper">
+                <h2 class="cards__card--title">Title Here</h2>
+                <p class="cards__card--paragraph">
+                    Lorem ipsum dolor sit amet consectetur adipisicing elit. Perferendis debitis eos delectus hic qui
+                    obcaecati natus aperiam repellendus laborum minus!
+                </p>
+            </div>
         </div>
     </div>
 
     <!-- Footer -->
-
-    <footer class="footer container">
-        <div class="footer__contact">
-            <div class="footer__contact--item">
-                <a href="Lorem, ipsum dolor sit amet consectetur adipisicing elit. Eos, perspiciatis.">
-                    Blokkenstraat 33
-                </a>
+    <footer class="footer">
+        <div class="container">
+            <div class="footer__heading">
+                <h2>
+                    <!-- <img src="assets/images/example.svg" alt=""> -->
+                    Van Ginneke
+                </h2>
             </div>
-            <div class="footer__contact--item">
-                <a href="">0612345678</a>
+            <div class="footer__content">
+                <div class="footer__content--item">
+                    <h4 class="footer__subheading">Recente Projecten</h4>
+                    <p>
+                        <a class="footer__link" href="#">Project</a>
+                    </p>
+                    <p>
+                        <a class="footer__link" href="#">Project</a>
+                    </p>
+                    <p>
+                        <a class="footer__link" href="#">Project</a>
+                    </p>
+                    <p>
+                        <a class="footer__link" href="#">Project</a>
+                    </p>
+                </div>
+                <div class="footer__content--item">
+                    <h4 class="footer__subheading">Social</h4>
+                    <p>
+                        <a class="footer__link" href="#"><i class="fab fa-linkedin"></i> Linkedin</a>
+                    </p>
+                    <p>
+                        <a class="footer__link" href="#"><i class="fab fa-twitter"></i> Twitter</a>
+                    </p>
+                </div>
+                <div class="footer__content--item">
+                    <h4 class="footer__subheading">Address</h4>
+                    <p>
+                        <a class="footer__link" href="">
+                            Blokkenstraat 33
+                        </a>
+                    </p>
+                    <h4 class="footer__subheading">Mobile</h4>
+                    <p>
+                        <a class="footer__link" href="#">+31-06382*****</a>
+                    </p>
+                    <h4 class="footer__subheading">Email</h4>
+                    <p>
+                        <a class="footer__link" href="#">vginneke@gmail.com</a>
+                    </p>
+                </div>
             </div>
-            <div class="footer__contact--item">
-                <a href="">collab@codewithmeF.com</a>
+            <div class="footer__copyright">
+                <div class="footer__copyright--line"></div>
+                © 2022 vginneke.
             </div>
-        </div>
-        <div class="footer__socials">
-            <a href="" class="footer__socials--icon">Facebook</a>
-            <a href="" class="footer__socials--icon">Facebook</a>
-            <a href="" class="footer__socials--icon">Facebook</a>
         </div>
     </footer>
 </body>
