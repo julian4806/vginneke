@@ -51,3 +51,6 @@ ontwerp (= huidige ontwerp, begeleiding en advies. Onder 1 menu-item)
 profiel
 algemeen
 contact
+
+
+meer info modal
