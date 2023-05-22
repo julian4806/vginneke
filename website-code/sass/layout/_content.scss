@@ -2,38 +2,43 @@
 @use "../abstracts/variables" as variables;
 
 .content {
-  display: flex;
-  gap: 20px;
+  background-color: variables.$secondary-color;
 
-  @media (max-width: variables.$breakpoint-medium) {
-    flex-direction: column;
-    align-items: center;
-  }
+  .container {
+    gap: 20px;
+    display: flex;
 
-  // left side of the content section
-  .content__banner {
-    @media (min-width: variables.$breakpoint-medium) {
-      width: 45%;
+    @media (max-width: variables.$breakpoint-medium) {
+      flex-direction: column;
+      align-items: center;
     }
 
-    .content__banner--banner {
-      width: 100%;
-    }
-  }
+    // left side of the content section
+    .content__banner {
+      @media (min-width: variables.$breakpoint-medium) {
+        width: 45%;
+      }
 
-  // right side of the content section
-  .content__info {
-    @media (min-width: variables.$breakpoint-medium) {
-      width: 55%;
+      .content__banner--banner {
+        width: 100%;
+        @include mixin.cut-corner;
+      }
     }
-    
-    @include mixin.center-left;
 
-    .content__info--title {
-      font-size: variables.$size-sub-heading;
-    }
-    .content__info--paragraph {
-      font-size: variables.$size-sub-text;
+    // right side of the content section
+    .content__info {
+      @media (min-width: variables.$breakpoint-medium) {
+        width: 55%;
+      }
+
+      @include mixin.center-left;
+
+      .content__info--title {
+        font-size: variables.$size-sub-heading;
+      }
+      .content__info--paragraph {
+        font-size: variables.$size-sub-text;
+      }
     }
   }
 }

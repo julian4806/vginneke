@@ -1,34 +1,33 @@
 @use "../abstracts/mixins" as mixins;
 @use "../abstracts/variables" as variables;
 
-.ontwerpcards {
+.projectcards {
   display: flex;
   flex-direction: column;
 
   & > :nth-child(even) {
     flex-direction: row-reverse;
   }
-  .ontwerpcards__card {
+  .projectcards__card {
     display: flex;
     gap: 40px;
 
-    .ontwerpcards__card--text {
+    .projectcards__card--text {
       width: 60%;
       @include mixins.center-left;
 
-      .ontwerpcards__card--title {
+      .projectcards__card--title {
         font-size: variables.$size-sub-heading;
       }
 
-      .ontwerpcards__card--paragraph {
+      .projectcards__card--paragraph {
         font-size: variables.$size-text;
       }
-
-      .ontwerpcards__card--paragraph {
-        font-size: variables.$size-text;
+      .read-more {
+        align-self: flex-end;
       }
     }
-    .ontwerpcards__card--image {
+    .projectcards__card--image {
       width: 40%;
 
       & > img {
@@ -39,7 +38,7 @@
   }
 }
 
-.ontwerpcards__list {
+.projectcards__list {
   padding: 10px 10px 10px 20px;
   list-style: inside;
   list-style-type: "- ";
