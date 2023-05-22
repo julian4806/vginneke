@@ -1,0 +1,23 @@
+@use "../abstracts/variables" as *;
+
+.projectcontent {
+  background-color: $secondary-color;
+  .projectcontent__wrapper {
+    display: flex;
+    justify-content: space-between;
+
+    .projectcontent__item {
+      text-align: center;
+
+      .projectcontent__item--title {
+        font-size: $size-heading;
+        font-weight: $font-bold;
+    }
+    
+    .projectcontent__item--description {
+        font-size: $size-sub-heading;
+        font-weight: $font-regular;
+      }
+    }
+  }
+}

@@ -24,7 +24,7 @@
 
     // Menu items
     // & > .nav-items,
-    & > .contact {
+    .contact {
       display: none;
     }
   }
@@ -52,7 +52,7 @@
         }
       }
 
-      & > .contact {
+      .contact {
         display: block;
       }
 

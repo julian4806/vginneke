@@ -2,31 +2,34 @@
 @use "../abstracts/variables" as variables;
 
 .hero {
-  @include mixin.cut-corner;
-  display: flex;
-  gap: 20px;
   background-color: variables.$secondary-color;
-  
-  @media (max-width: variables.$breakpoint-medium) {
-    flex-direction: column-reverse;
-  }
-  // padding: 40px;
+  @include mixin.cut-corner;
 
-  // linker kant van de hero
-  .hero__info {
-    @media (min-width: variables.$breakpoint-medium) {
-      width: 60%;
+  .container {
+    display: flex;
+    gap: 20px;
+
+    @media (max-width: variables.$breakpoint-medium) {
+      flex-direction: column-reverse;
     }
-    @include mixin.center-left;
+    // padding: 40px;
 
-    .hero__info--title {
-      font-size: variables.$size-heading;
-      background-color: none;
-    }
+    // linker kant van de hero
+    .hero__info {
+      @media (min-width: variables.$breakpoint-medium) {
+        width: 60%;
+      }
+      @include mixin.center-left;
 
-    .hero__info--paragraph {
-      font-size: variables.$size-sub-text;
-      margin: 20px 0;
+      .hero__info--title {
+        font-size: variables.$size-heading;
+        background-color: none;
+      }
+
+      .hero__info--paragraph {
+        font-size: variables.$size-sub-text;
+        margin: 20px 0;
+      }
     }
   }
 

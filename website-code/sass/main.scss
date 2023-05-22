@@ -1,15 +1,24 @@
 // modules/components e.g. toggler
-@use '../sass/components/navbar';
+@use "../sass/components/navbar";
 
 // Standards
 @use "../sass/layout/container";
 @use "../sass/base/reset";
 @use "../sass/base/fonts";
 
-// Website Components
+// Website Components home
 @use "../sass/layout/navigation";
 @use "../sass/layout/hero";
 @use "../sass/layout/cards";
 @use "../sass/layout/footer";
+
+// Website Components projects
+@use "../sass/layout/projects-content";
+@use "../sass/layout/projects-hero";
+@use "../sass/layout/projects-cards";
+
+// Website Components ontwerp
+@use "../sass/layout/ontwerp-hero";
+@use "../sass/layout/ontwerp-cards";
 
 @use "../sass/layout/content";

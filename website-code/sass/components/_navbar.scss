@@ -1,0 +1,5 @@
+@use "../abstracts/variables" as variables;
+
+.selected {
+  border-bottom: 2px solid variables.$primary-color;
+}

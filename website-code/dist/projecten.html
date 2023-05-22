@@ -5,7 +5,7 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Home</title>
+    <title>Projecten</title>
     <link rel='stylesheet' href='assets/css/main.css'>
     <script src='assets/js/navbar.js' defer></script>
 </head>
@@ -17,10 +17,10 @@
             <img src="assets/images/example.svg" class="logo" alt="">
             <ul class="nav-items" style="display: flex;">
                 <li class="item">
-                    <a href="./index.html" class="link selected">Home</a>
+                    <a href="./index.html" class="link">Home</a>
                 </li>
                 <li class="item">
-                    <a href="./projecten.html" class="link">Projecten</a>
+                    <a href="./projecten.html" class="link selected">Projecten</a>
                 </li>
                 <li class="item">
                     <a href="./ontwerp.html" class="link">Ontwerp</a>
@@ -35,9 +35,7 @@
                     <a href="./contact.html" class="link">Contact</a>
                 </li>
             </ul>
-            <a href="./contact.html" class="contact">
-                <button>Contact</button>
-            </a>
+            <a href="./contact.html"><button class="contact">Contact</button></a>
             <button class="hamburger">
                 <span class="line"></span>
                 <span class="line"></span>
@@ -45,84 +43,84 @@
             </button>
         </nav>
     </header>
-    <!-- Hero -->
-    <div class="hero">
-        <div class="container">
-            <div class="hero__info">
-                <h2 class="hero__info--title">Data-driven PPC Agency</h2>
-                <p class="hero__info--paragraph">
-                    In a sea of information, we'll help you leverage the data that makes a difference for your brand.
-                    Lorem
-                    ipsum dolor sit amet consectetur adipisicing elit. Officiis, fugiat.
-                </p>
-                <button class="hero__info--button">Get started</button>
-            </div>
-            <div class="hero__banner">
-                <img src="./assets/images/logo.png" alt="" class="hero__banner--banner">
-            </div>
-        </div>
-    </div>
-
-    <!-- Content -->
-    <div class="content container">
-        <div class="content__banner">
-            <img src="./assets/images/home-banner.jpg" alt="" class="content__banner--banner">
-        </div>
-        <div class="content__info">
-            <h2 class="content__info--title">Data-driven PPC Agency In a sea of information, we'll help you leverage the
-                data that makes a </h2>
-            <p class="content__info--paragraph">
+    <!-- projecthero -->
+    <div class="projecthero container">
+        <div class="projecthero__info">
+            <h2 class="projecthero__info--title">Data-driven PPC Agency</h2>
+            <p class="projecthero__info--paragraph">
                 In a sea of information, we'll help you leverage the data that makes a difference for your brand. Lorem
                 ipsum dolor sit amet consectetur adipisicing elit. Officiis, fugiat.
             </p>
+            <div class="projecthero__links">
+                <button class="projecthero__links--link">Lorem, ipsum dolor.</button>
+                <button class="projecthero__links--link">Lorem, ipsum.</button> <br>
+                <button class="projecthero__links--link">Lorem ipsum dolor sit.</button>
+                <button class="projecthero__links--link">Lorem.</button>
+            </div>
+        </div>
+        <div class="projecthero__banner">
+            <img src="./assets/images/logo.png" alt="" class="projecthero__banner--banner">
         </div>
     </div>
 
+    <!-- projectcontent -->
+    <div class="projectcontent">
+        <div class="projectcontent__wrapper container">
+            <div class="projectcontent__item">
+                <div class="projectcontent__item--title">200+</div>
+                <div class="projectcontent__item--description">blije klanten</div>
+            </div>
+            <div class="projectcontent__item">
+                <div class="projectcontent__item--title">5+</div>
+                <div class="projectcontent__item--description">Jaar ervaring</div>
+            </div>
+            <div class="projectcontent__item">
+                <div class="projectcontent__item--title">500+</div>
+                <div class="projectcontent__item--description">Goede reviews</div>
+            </div>
+        </div>
+
+    </div>
+
     <!-- Cards -->
-    <div class="cards container">
-        <div class="cards__card">
-            <div class="cards__card--wrapper">
-                <h2 class="cards__card--title">Title Here</h2>
-                <p class="cards__card--paragraph">
+    <div class="projectcards container">
+        <!-- card -->
+        <div class="projectcards__card">
+            <div class="projectcards__card--text">
+                <h2 class="projectcards__card--title">Title Here</h2>
+                <p class="projectcards__card--paragraph">
                     Lorem ipsum dolor sit amet consectetur adipisicing elit. Perferendis debitis eos delectus hic qui
                     obcaecati natus aperiam repellendus laborum minus!
                 </p>
             </div>
+            <div class="projectcards__card--image">
+                <img src="./assets/images/home-banner.jpg" alt="">
+            </div>
         </div>
-        <div class="cards__card">
-            <div class="cards__card--wrapper">
-                <h2 class="cards__card--title">Title Here</h2>
-                <p class="cards__card--paragraph">
+        <!-- card -->
+        <div class="projectcards__card">
+            <div class="projectcards__card--text">
+                <h2 class="projectcards__card--title">Title Here</h2>
+                <p class="projectcards__card--paragraph">
                     Lorem ipsum dolor sit amet consectetur adipisicing elit. Perferendis debitis eos delectus hic qui
                     obcaecati natus aperiam repellendus laborum minus!
                 </p>
             </div>
+            <div class="projectcards__card--image">
+                <img src="./assets/images/home-banner.jpg" alt="">
+            </div>
         </div>
-        <div class="cards__card">
-            <div class="cards__card--wrapper">
-                <h2 class="cards__card--title">Title Here</h2>
-                <p class="cards__card--paragraph">
+        <!-- card -->
+        <div class="projectcards__card">
+            <div class="projectcards__card--text">
+                <h2 class="projectcards__card--title">Title Here</h2>
+                <p class="projectcards__card--paragraph">
                     Lorem ipsum dolor sit amet consectetur adipisicing elit. Perferendis debitis eos delectus hic qui
                     obcaecati natus aperiam repellendus laborum minus!
                 </p>
             </div>
-        </div>
-        <div class="cards__card">
-            <div class="cards__card--wrapper">
-                <h2 class="cards__card--title">Title Here</h2>
-                <p class="cards__card--paragraph">
-                    Lorem ipsum dolor sit amet consectetur adipisicing elit. Perferendis debitis eos delectus hic qui
-                    obcaecati natus aperiam repellendus laborum minus!
-                </p>
-            </div>
-        </div>
-        <div class="cards__card">
-            <div class="cards__card--wrapper">
-                <h2 class="cards__card--title">Title Here</h2>
-                <p class="cards__card--paragraph">
-                    Lorem ipsum dolor sit amet consectetur adipisicing elit. Perferendis debitis eos delectus hic qui
-                    obcaecati natus aperiam repellendus laborum minus!
-                </p>
+            <div class="projectcards__card--image">
+                <img src="./assets/images/home-banner.jpg" alt="">
             </div>
         </div>
     </div>

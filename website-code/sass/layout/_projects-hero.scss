@@ -1,0 +1,51 @@
+@use "../abstracts/mixins" as mixin;
+@use "../abstracts/variables" as variables;
+
+.projecthero {
+  @include mixin.cut-corner;
+  display: flex;
+  gap: 20px;
+
+  @media (max-width: variables.$breakpoint-medium) {
+    flex-direction: column-reverse;
+  }
+  // padding: 40px;
+
+  // linker kant van de projecthero
+  .projecthero__info {
+    @media (min-width: variables.$breakpoint-medium) {
+      width: 60%;
+    }
+    @include mixin.center-left;
+
+    .projecthero__info--title {
+      font-size: variables.$size-heading;
+      background-color: none;
+    }
+
+    .projecthero__info--paragraph {
+      font-size: variables.$size-sub-text;
+      margin: 20px 0;
+    }
+
+    .projecthero__links {
+        .projecthero__links--link {
+            margin: 4px 2px;
+            cursor: pointer;
+        }
+    }
+  }
+
+  // rechter kant van de projecthero
+  .projecthero__banner {
+    @media (min-width: variables.$breakpoint-medium) {
+      width: 40%;
+    }
+    margin: 0 auto;
+
+    .projecthero__banner--banner {
+      width: 100%;
+      @include mixin.cut-corner;
+    }
+  }
+}
