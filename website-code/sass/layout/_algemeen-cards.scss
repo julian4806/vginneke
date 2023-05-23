@@ -1,0 +1,45 @@
+@use "../abstracts/mixins" as mixins;
+@use "../abstracts/variables" as variables;
+
+.algemeencards {
+  display: flex;
+  flex-direction: column;
+
+  & > :nth-child(even) {
+    flex-direction: row-reverse;
+  }
+  .algemeencards__card {
+    display: flex;
+    gap: 40px;
+
+    .algemeencards__card--text {
+      width: 60%;
+      @include mixins.center-left;
+
+      .algemeencards__card--title {
+        font-size: variables.$size-sub-heading;
+      }
+
+      .algemeencards__card--paragraph {
+        font-size: variables.$size-text;
+      }
+      .read-more {
+        align-self: flex-end;
+      }
+    }
+    .algemeencards__card--image {
+      width: 40%;
+
+      & > img {
+        width: 100%;
+        @include mixins.cut-corner;
+      }
+    }
+  }
+}
+
+.algemeencards__list {
+  padding: 10px 10px 10px 20px;
+  list-style: inside;
+  list-style-type: "- ";
+}
