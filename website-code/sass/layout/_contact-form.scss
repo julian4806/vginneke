@@ -1,0 +1,50 @@
+@use "../abstracts/mixins" as mixin;
+@use "../abstracts/variables" as variables;
+
+.contact {
+  display: flex;
+  gap: 20px;
+
+  .contact__form {
+    width: 60%;
+
+    .contact__form--title {
+      font-size: variables.$size-heading;
+    }
+
+    .contact__form--form {
+      label {
+        font-size: variables.$size-sub-heading;
+      }
+      input,
+      textarea {
+        width: 100%;
+        padding: 10px 5px;
+        font-size: variables.$size-text;
+        border: 1px solid variables.$secondary-color;
+        border-radius: 5px;
+
+        &:focus {
+          outline: 0;
+        }
+      }
+      textarea {
+        resize: vertical;
+      }
+    }
+  }
+
+  .contact__banner {
+    width: 40%;
+
+    img {
+      width: 100%;
+      height: 100%;
+      object-fit: cover;
+    }
+  }
+
+  .contact__form--button {
+    font-size: variables.$size-text;
+  }
+}

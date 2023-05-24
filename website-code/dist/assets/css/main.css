@@ -491,6 +491,46 @@ footer .footer__copyright .footer__copyright--line {
   list-style-type: "- ";
 }
 
+.contact {
+  display: flex;
+  gap: 20px;
+}
+.contact .contact__form {
+  width: 60%;
+}
+.contact .contact__form .contact__form--title {
+  font-size: 36px;
+}
+.contact .contact__form .contact__form--form label {
+  font-size: 20px;
+}
+.contact .contact__form .contact__form--form input,
+.contact .contact__form .contact__form--form textarea {
+  width: 100%;
+  padding: 10px 5px;
+  font-size: 16px;
+  border: 1px solid #a4bcc2;
+  border-radius: 5px;
+}
+.contact .contact__form .contact__form--form input:focus,
+.contact .contact__form .contact__form--form textarea:focus {
+  outline: 0;
+}
+.contact .contact__form .contact__form--form textarea {
+  resize: vertical;
+}
+.contact .contact__banner {
+  width: 40%;
+}
+.contact .contact__banner img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+.contact .contact__form--button {
+  font-size: 16px;
+}
+
 .content {
   background-color: #a4bcc2;
 }
