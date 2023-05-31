@@ -1,5 +1,6 @@
 @use "../abstracts/mixins" as mixin;
 @use "../abstracts/variables" as variables;
+@import "../abstracts/include-media";
 
 .content {
   background-color: variables.$secondary-color;
@@ -8,14 +9,14 @@
     gap: 20px;
     display: flex;
 
-    @media (max-width: variables.$breakpoint-medium) {
+    @include media("<tablet") {
       flex-direction: column;
       align-items: center;
     }
 
     // left side of the content section
     .content__banner {
-      @media (min-width: variables.$breakpoint-medium) {
+      @include media(">tablet") {
         width: 45%;
       }
 
@@ -27,7 +28,7 @@
 
     // right side of the content section
     .content__info {
-      @media (min-width: variables.$breakpoint-medium) {
+      @include media(">tablet") {
         width: 55%;
       }
 

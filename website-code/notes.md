@@ -1,3 +1,7 @@
+TODO:
+
+modal met details project
+
 How to structure your SASS projects
 https://itnext.io/structuring-your-sass-projects-c8d41fa55ed4
 

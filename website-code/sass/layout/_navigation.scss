@@ -1,5 +1,6 @@
 @use "../abstracts/variables" as variables;
 @use "../base/fonts" as *;
+@import "../abstracts/include-media";
 
 .header {
   width: 100%;
@@ -31,7 +32,7 @@
 }
 
 // DESKTOP NAV
-@media (min-width: variables.$breakpoint-medium) {
+@include media(">tablet") {
   .header {
     & > .navigation {
       // Menu items
@@ -64,7 +65,7 @@
 }
 
 // MOBILE NAV
-@media (max-width: variables.$breakpoint-medium) {
+@include media("<=tablet") {
   .header {
     & > .navigation {
       & > .nav-items {

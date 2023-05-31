@@ -1,4 +1,6 @@
 @use "../abstracts/variables" as *;
+@import "../abstracts/include-media";
+
 
 .ontwerpcontent {
   background-color: $secondary-color;
@@ -12,11 +14,19 @@
       .ontwerpcontent__item--title {
         font-size: $size-heading;
         font-weight: $font-bold;
+
+        @include media("<tablet") {
+          font-size: $size-sub-heading;
+        }
       }
 
       .ontwerpcontent__item--description {
         font-size: $size-sub-heading;
         font-weight: $font-regular;
+
+        @include media("<tablet") {
+          font-size: $size-text;
+        }
       }
     }
   }

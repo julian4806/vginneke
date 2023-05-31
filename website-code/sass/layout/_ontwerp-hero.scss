@@ -1,19 +1,20 @@
 @use "../abstracts/mixins" as mixin;
 @use "../abstracts/variables" as variables;
+@import "../abstracts/include-media";
 
 .ontwerphero {
   @include mixin.cut-corner;
   display: flex;
   gap: 20px;
 
-  @media (max-width: variables.$breakpoint-medium) {
+  @include media("<tablet") {
     flex-direction: column-reverse;
   }
   // padding: 40px;
 
   // linker kant van de ontwerphero
   .ontwerphero__info {
-    @media (min-width: variables.$breakpoint-medium) {
+    @include media(">tablet") {
       width: 60%;
     }
     @include mixin.center-left;
@@ -38,7 +39,7 @@
 
   // rechter kant van de ontwerphero
   .ontwerphero__banner {
-    @media (min-width: variables.$breakpoint-medium) {
+    @include media(">tablet") {
       width: 40%;
     }
     margin: 0 auto;
