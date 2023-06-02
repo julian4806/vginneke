@@ -37,6 +37,11 @@
       }
       .read-more {
         align-self: flex-end;
+        margin: 40px 0;
+
+        @include media("<tablet") {
+          margin: 20px 0;
+        }
       }
     }
     .projectcards__card--image {
