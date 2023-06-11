@@ -14,7 +14,6 @@
     <!-- Navbar -->
     <header class="header">
         <nav class="navigation container">
-
             <a href="index.html" class="logo-link">
                 <img src="assets/images/logo.png" class="logo" alt="">
             </a>
@@ -25,9 +24,25 @@
                 <li class="item">
                     <a href="./projecten.html" class="link selected">Projecten</a>
                 </li>
-                <li class="item">
-                    <a href="./ontwerp.html" class="link">Ontwerp</a>
+                <li class="item ontwerp">
+                    <a href="./ontwerp.html" class="link">Ontwerp <span class="desktop">↓</span></a>
+
+                    <!-- dropdown alleen op desktops -->
+                    <div class="dropdown">
+                        <a href="./begeleiding.html" class="link">Begeleiding</a>
+                        <a href="./advies.html" class="link">Advies</a>
+                    </div>
                 </li>
+
+                <!-- alleen op mobiel te zien -->
+                <li class="item mobile">
+                    <a href="./begeleiding.html" class="link">Begeleiding</a>
+                </li>
+                <li class="item mobile">
+                    <a href="./advies.html" class="link">Advies</a>
+                </li>
+
+
                 <li class="item">
                     <a href="./profiel.html" class="link">Profiel</a>
                 </li>
@@ -38,7 +53,9 @@
                     <a href="./contact.html" class="link">Contact</a>
                 </li>
             </ul>
-            <a href="./contact.html"><button class="contact">Contact</button></a>
+            <a href="./contact.html" class="contact">
+                <button>Contact</button>
+            </a>
             <button class="hamburger">
                 <span class="line"></span>
                 <span class="line"></span>
