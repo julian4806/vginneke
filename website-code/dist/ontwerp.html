@@ -14,7 +14,11 @@
     <!-- Navbar -->
     <header class="header">
         <nav class="navigation container">
-            <img src="assets/images/example.svg" class="logo" alt="">
+
+            <a href="index.html" class="logo-link">
+                <img src="assets/images/logo.png" class="logo" alt="">
+            </a>
+
             <ul class="nav-items" style="display: flex;">
                 <li class="item">
                     <a href="./index.html" class="link">Home</a>
@@ -46,15 +50,21 @@
     <!-- ontwerphero -->
     <div class="ontwerphero container">
         <div class="ontwerphero__info">
-            <h2 class="ontwerphero__info--title">Data-driven PPC Agency</h2>
+            <h2 class="ontwerphero__info--title">Alle ontwerpen, Van Ginneke</h2>
             <p class="ontwerphero__info--paragraph">
+                In elk ontwerp wordt gezocht naar meerwaarde, het geheel moet meer zijn dan de optelsom van de delen. De
+                opdracht wordt altijd gezien als een uitdaging om binnen de beperkingen het beste eruit te halen.
+                <br><br>
+
                 Snel scrollen naar verschillende kopjes
             </p>
             <div class="ontwerphero__links">
-                <button class="ontwerphero__links--link">Lorem, ipsum dolor.</button>
-                <button class="ontwerphero__links--link">Lorem, ipsum.</button> <br>
-                <button class="ontwerphero__links--link">Lorem ipsum dolor sit.</button>
-                <button class="ontwerphero__links--link">Lorem.</button>
+                <a href="#voorlopig">
+                    <button class="ontwerphero__links--link">Voorlopig Ontwerp</button>
+                </a>
+                <a href="#definitief">
+                    <button class="ontwerphero__links--link">Definitief Ontwerp</button> <br>
+                </a>
             </div>
         </div>
         <div class="ontwerphero__banner">
@@ -82,44 +92,80 @@
 
     <!-- Cards -->
     <div class="ontwerpcards container">
-        <!-- card -->
-        <div class="ontwerpcards__card">
+        <!-- Voorlopig Ontwerp Kaart -->
+        <div class="ontwerpcards__card" id="voorlopig">
             <div class="ontwerpcards__card--text">
-                <h2 class="ontwerpcards__card--title">Title Here</h2>
+                <h2 class="ontwerpcards__card--title">Voorlopig Ontwerp</h2>
                 <p class="ontwerpcards__card--paragraph">
-                    Lorem ipsum dolor sit amet consectetur adipisicing elit. Perferendis debitis eos delectus hic qui
-                    obcaecati natus aperiam repellendus laborum minus!
+                    Onderzoek, analyse en ideevorming. De wensen en ideeen worden in een ruimtelijk ontwerp vertaald en
+                    ter beoordeling gepresenteerd.
+
 
                 <ul class="ontwerpcards__list">
-                    <li class="ontwerpcards__list--item">test</li>
-                    <li class="ontwerpcards__list--item">test</li>
-                    <li class="ontwerpcards__list--item">test</li>
-                    <li class="ontwerpcards__list--item">test</li>
+                    <li class="ontwerpcards__list--item">inventarisatie (woon)wensen en samenstellen programma van eisen
+                    </li>
+                    <li class="ontwerpcards__list--item">beoordelen en in kaart brengen situatie en bestaande bebouwing
+                    </li>
+                    <li class="ontwerpcards__list--item">analyse bestemmingsplan en lokale voorschriften</li>
+                    <li class="ontwerpcards__list--item">vaststellen benodigde vergunningen</li>
+                    <li class="ontwerpcards__list--item">globale bouwkostenraming</li>
+                    <li class="ontwerpcards__list--item">ontwerpstudies</li>
+                    <li class="ontwerpcards__list--item">ruimtelijke en functionele opzet</li>
+                    <li class="ontwerpcards__list--item">bepalen verschijningsvorm en esthetische uitwerking</li>
+                    <li class="ontwerpcards__list--item">visualisaties, studiemaquette</li>
+                </ul>
+
+                optioneel:
+
+                <ul class="ontwerpcards__list">
+                    <li class="ontwerpcards__list--item">opmeten en uittekenen bestaande bebouwing (in het geval er geen
+                        tekeningen aanwezig zijn)</li>
                 </ul>
                 </p>
             </div>
             <div class="ontwerpcards__card--image">
-                <img src="./assets/images/home-banner.jpg" alt="">
+                <img src="./assets/images/Voorlopig Ontwerp.jpg" alt="">
             </div>
         </div>
-        <!-- card -->
-        <div class="ontwerpcards__card">
+
+        <!-- Definitief Ontwerp Kaart -->
+        <div class="ontwerpcards__card" id="definitief">
             <div class="ontwerpcards__card--text">
-                <h2 class="ontwerpcards__card--title">Title Here</h2>
+                <h2 class="ontwerpcards__card--title">Definitief Ontwerp</h2>
                 <p class="ontwerpcards__card--paragraph">
-                    Lorem ipsum dolor sit amet consectetur adipisicing elit. Perferendis debitis eos delectus hic qui
-                    obcaecati natus aperiam repellendus laborum minus!
+                    Het Voorlopig Ontwerp wordt aangepast en uitgewerkt tot een definitieve set, waarop de
+                    bouwvergunning kan worden aangevraagd.
 
                 <ul class="ontwerpcards__list">
-                    <li class="ontwerpcards__list--item">test</li>
-                    <li class="ontwerpcards__list--item">test</li>
-                    <li class="ontwerpcards__list--item">test</li>
-                    <li class="ontwerpcards__list--item">test</li>
+                    <li class="ontwerpcards__list--item">vaststelling definitieve indeling en verschijningsvorm</li>
+                    <li class="ontwerpcards__list--item">definitieve hoofdmaatvoering</li>
+                    <li class="ontwerpcards__list--item">materialisatie</li>
+                    <li class="ontwerpcards__list--item">principedetaillering</li>
+                    <li class="ontwerpcards__list--item">verwerking constructiegegevens</li>
+                    <li class="ontwerpcards__list--item">luchtkanaal- en rioleringsverloop</li>
+                    <li class="ontwerpcards__list--item">raming bouwkosten en analyse haalbaarheid</li>
+                    <li class="ontwerpcards__list--item">bouwbesluitberekeningen (oppervlaktes, daglicht, ventilatie,
+                        isolatie)</li>
+                    <li class="ontwerpcards__list--item">overleg en voorbereiding bouwvergunningaanvraag</li>
+                </ul>
+
+                optioneel, de coördinatie van:
+
+                <ul class="ontwerpcards__list">
+                    <li class="ontwerpcards__list--item">bijkomende sloop-, kap- en/of inritvergunning</li>
+                    <li class="ontwerpcards__list--item">verkennend en/of aanvullend bodemonderzoek /
+                        schoongrondverklaring</li>
+                    <li class="ontwerpcards__list--item">constructieberekeningen en funderingsadvies</li>
+                    <li class="ontwerpcards__list--item">installatie advies</li>
+                    <li class="ontwerpcards__list--item">energieprestatie berekening</li>
+                    <li class="ontwerpcards__list--item">veiligheids- en gezondheidsplan</li>
+                    <li class="ontwerpcards__list--item">presentatiemaquette</li>
+                    <li class="ontwerpcards__list--item">interieurbegeleiding</li>
                 </ul>
                 </p>
             </div>
             <div class="ontwerpcards__card--image">
-                <img src="./assets/images/home-banner.jpg" alt="">
+                <img src="./assets/images/Definitief Ontwerp.jpg" alt="">
             </div>
         </div>
     </div>
@@ -129,45 +175,45 @@
         <div class="container">
             <div class="footer__heading">
                 <h2>
-                    <!-- <img src="assets/images/example.svg" alt=""> -->
-                    Van Ginneke
+                    <a href="index.html">
+                        <img src="assets/images/logo.png" alt="">
+                    </a>
                 </h2>
             </div>
             <div class="footer__content">
                 <div class="footer__content--item">
                     <h4 class="footer__subheading">Recente ontwerpen</h4>
                     <p>
-                        <a class="footer__link" href="#">ontwerp</a>
+                        <a class="footer__link" href="#">Gerverscop, Harmelen</a>
                     </p>
                     <p>
-                        <a class="footer__link" href="#">ontwerp</a>
+                        <a class="footer__link" href="#">Uytenbosch, Baarn</a>
                     </p>
                     <p>
-                        <a class="footer__link" href="#">ontwerp</a>
+                        <a class="footer__link" href="#">Laanstraat, Baarn</a>
                     </p>
                     <p>
-                        <a class="footer__link" href="#">ontwerp</a>
+                        <a class="footer__link" href="#">Lange Brinkweg, Soest</a>
                     </p>
                 </div>
                 <div class="footer__content--item">
                     <h4 class="footer__subheading">Social</h4>
                     <p>
-                        <a class="footer__link" href="#"><i class="fab fa-linkedin"></i> Linkedin</a>
+                        <a class="footer__link" href="http://www.linkedin.com/pub/gert-jan-van-ginneke/25/746/b6a"
+                            target="_blank"><i class="fab fa-linkedin"></i> Linkedin</a>
                     </p>
-                    <p>
-                        <a class="footer__link" href="#"><i class="fab fa-twitter"></i> Twitter</a>
-                    </p>
+
                 </div>
                 <div class="footer__content--item">
                     <h4 class="footer__subheading">Address</h4>
                     <p>
                         <a class="footer__link" href="">
-                            Blokkenstraat 33
+                            Sparrenlaan 1b, 3742WD Baarn
                         </a>
                     </p>
                     <h4 class="footer__subheading">Mobile</h4>
                     <p>
-                        <a class="footer__link" href="#">+31-06382*****</a>
+                        <a class="footer__link" href="#">+31-(0)6-48664262</a>
                     </p>
                     <h4 class="footer__subheading">Email</h4>
                     <p>
@@ -177,7 +223,11 @@
             </div>
             <div class="footer__copyright">
                 <div class="footer__copyright--line"></div>
-                © 2022 vginneke.
+                <span class="text">
+                    Copyright </span>©
+                <script>
+                    document.write(new Date().getFullYear());
+                </script><span> All Rights Reserved</span>.
             </div>
         </div>
     </footer>

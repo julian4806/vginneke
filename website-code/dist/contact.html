@@ -14,35 +14,38 @@
     <!-- Navbar -->
     <header class="header">
         <nav class="navigation container">
-            <img src="assets/images/example.svg" class="logo" alt="">
-            <ul class="nav-items" style="display: flex;">
-                <li class="item">
-                    <a href="./index.html" class="link">Home</a>
-                </li>
-                <li class="item">
-                    <a href="./projecten.html" class="link">Projecten</a>
-                </li>
-                <li class="item">
-                    <a href="./ontwerp.html" class="link">Ontwerp</a>
-                </li>
-                <li class="item">
-                    <a href="./profiel.html" class="link">Profiel</a>
-                </li>
-                <li class="item">
-                    <a href="./algemeen.html" class="link">Algemeen</a>
-                </li>
-                <li class="item item-contact">
-                    <a href="./contact.html" class="link">Contact</a>
-                </li>
-            </ul>
-            <a href="./contact.html" class="contact">
-                <button>Contact</button>
-            </a>
-            <button class="hamburger">
-                <span class="line"></span>
-                <span class="line"></span>
-                <span class="line"></span>
-            </button>
+
+        <a href="index.html" class="logo-link">
+            <img src="assets/images/logo.png" class="logo" alt="">
+        </a>
+        <ul class="nav-items" style="display: flex;">
+            <li class="item">
+                <a href="./index.html" class="link">Home</a>
+            </li>
+            <li class="item">
+                <a href="./projecten.html" class="link">Projecten</a>
+            </li>
+            <li class="item">
+                <a href="./ontwerp.html" class="link">Ontwerp</a>
+            </li>
+            <li class="item">
+                <a href="./profiel.html" class="link">Profiel</a>
+            </li>
+            <li class="item">
+                <a href="./algemeen.html" class="link">Algemeen</a>
+            </li>
+            <li class="item item-contact">
+                <a href="./contact.html" class="link">Contact</a>
+            </li>
+        </ul>
+        <a href="./contact.html" class="contact">
+            <button>Contact</button>
+        </a>
+        <button class="hamburger">
+            <span class="line"></span>
+            <span class="line"></span>
+            <span class="line"></span>
+        </button>
         </nav>
     </header>
     <!-- contact -->
@@ -56,7 +59,8 @@
                 <input type="text" id="email" name="email" placeholder="vginneke@gmail.com"><br><br>
 
                 <label for="lname">Bericht:</label><br>
-                <textarea type="text" id="lname" name="lname" cols="30" rows="10" placeholder="Beste heer Van Ginneke,"></textarea><br>
+                <textarea type="text" id="lname" name="lname" cols="30" rows="10"
+                    placeholder="Beste heer Van Ginneke,"></textarea><br>
                 <button type="submit" class="contact__form--button">Verstuur bericht</button>
             </form>
         </div>
@@ -70,45 +74,45 @@
         <div class="container">
             <div class="footer__heading">
                 <h2>
-                    <!-- <img src="assets/images/example.svg" alt=""> -->
-                    Van Ginneke
+                    <a href="index.html">
+                        <img src="assets/images/logo.png" alt="">
+                    </a>
                 </h2>
             </div>
             <div class="footer__content">
                 <div class="footer__content--item">
                     <h4 class="footer__subheading">Recente Projecten</h4>
                     <p>
-                        <a class="footer__link" href="#">Project</a>
+                        <a class="footer__link" href="#">Gerverscop, Harmelen</a>
                     </p>
                     <p>
-                        <a class="footer__link" href="#">Project</a>
+                        <a class="footer__link" href="#">Uytenbosch, Baarn</a>
                     </p>
                     <p>
-                        <a class="footer__link" href="#">Project</a>
+                        <a class="footer__link" href="#">Laanstraat, Baarn</a>
                     </p>
                     <p>
-                        <a class="footer__link" href="#">Project</a>
+                        <a class="footer__link" href="#">Lange Brinkweg, Soest</a>
                     </p>
                 </div>
                 <div class="footer__content--item">
                     <h4 class="footer__subheading">Social</h4>
                     <p>
-                        <a class="footer__link" href="#"><i class="fab fa-linkedin"></i> Linkedin</a>
+                        <a class="footer__link" href="http://www.linkedin.com/pub/gert-jan-van-ginneke/25/746/b6a"
+                            target="_blank"><i class="fab fa-linkedin"></i> Linkedin</a>
                     </p>
-                    <p>
-                        <a class="footer__link" href="#"><i class="fab fa-twitter"></i> Twitter</a>
-                    </p>
+
                 </div>
                 <div class="footer__content--item">
                     <h4 class="footer__subheading">Address</h4>
                     <p>
                         <a class="footer__link" href="">
-                            Blokkenstraat 33
+                            Sparrenlaan 1b, 3742WD Baarn
                         </a>
                     </p>
                     <h4 class="footer__subheading">Mobile</h4>
                     <p>
-                        <a class="footer__link" href="#">+31-06382*****</a>
+                        <a class="footer__link" href="#">+31-(0)6-48664262</a>
                     </p>
                     <h4 class="footer__subheading">Email</h4>
                     <p>
@@ -118,7 +122,11 @@
             </div>
             <div class="footer__copyright">
                 <div class="footer__copyright--line"></div>
-                © 2022 vginneke.
+                <span class="text">
+                    Copyright </span>©
+                <script>
+                    document.write(new Date().getFullYear());
+                </script><span> All Rights Reserved</span>.
             </div>
         </div>
     </footer>

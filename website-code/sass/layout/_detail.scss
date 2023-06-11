@@ -15,20 +15,27 @@
     width: 100%;
     height: 400px;
     display: flex;
+    justify-content: center;
     flex-direction: row-reverse;
     @include media("<tablet") {
-      height: 300px;
+      height: 400px;
+      gap: 10px;
     }
 
-    @include media("<tablet") {
-      gap: 10px;
+    @include media("<phone") {
+      flex-direction: column;
     }
 
     .gallery__images--preview {
       height: 80%;
-      width: 350px;
+      width: 100%;
+      min-width: 300px;
       display: flex;
       align-items: center;
+
+      @include media("<phone") {
+       min-width: 100px;
+      }
 
       img {
         width: 100%;
@@ -41,11 +48,18 @@
       display: flex;
       flex-direction: column;
       overflow-y: scroll;
-      width: 30%;
+      width: 100%;
+      min-width: 80px;
 
       @include media("<tablet") {
-        // width: 80px;
+        width: 20%;
         min-width: 80px;
+      }
+
+      @include media("<phone") {
+        flex-direction: row;
+        width: 100%;
+        height: 100px;
       }
 
       gap: 10px;
@@ -65,7 +79,6 @@
       font-size: 24px;
     }
 
-    .gallery__text--paragraph {
-    }
+    // .gallery__text--paragraph {}
   }
 }

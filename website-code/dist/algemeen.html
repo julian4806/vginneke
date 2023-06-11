@@ -14,7 +14,10 @@
     <!-- Navbar -->
     <header class="header">
         <nav class="navigation container">
-            <img src="assets/images/example.svg" class="logo" alt="">
+
+            <a href="index.html" class="logo-link">
+                <img src="assets/images/logo.png" class="logo" alt="">
+            </a>
             <ul class="nav-items" style="display: flex;">
                 <li class="item">
                     <a href="./index.html" class="link">Home</a>
@@ -87,8 +90,9 @@
         <div class="container">
             <div class="footer__heading">
                 <h2>
-                    <!-- <img src="assets/images/example.svg" alt=""> -->
-                    Van Ginneke
+                    <a href="index.html">
+                        <img src="assets/images/logo.png" alt="">
+                    </a>
                 </h2>
             </div>
             <div class="footer__content">
@@ -110,22 +114,21 @@
                 <div class="footer__content--item">
                     <h4 class="footer__subheading">Social</h4>
                     <p>
-                        <a class="footer__link" href="#"><i class="fab fa-linkedin"></i> Linkedin</a>
+                        <a class="footer__link" href="http://www.linkedin.com/pub/gert-jan-van-ginneke/25/746/b6a"
+                            target="_blank"><i class="fab fa-linkedin"></i> Linkedin</a>
                     </p>
-                    <p>
-                        <a class="footer__link" href="#"><i class="fab fa-twitter"></i> Twitter</a>
-                    </p>
+
                 </div>
                 <div class="footer__content--item">
                     <h4 class="footer__subheading">Address</h4>
                     <p>
                         <a class="footer__link" href="">
-                            Blokkenstraat 33
+                            Sparrenlaan 1b, 3742WD Baarn
                         </a>
                     </p>
                     <h4 class="footer__subheading">Mobile</h4>
                     <p>
-                        <a class="footer__link" href="#">+31-06382*****</a>
+                        <a class="footer__link" href="#">+31-(0)6-48664262</a>
                     </p>
                     <h4 class="footer__subheading">Email</h4>
                     <p>
@@ -135,7 +138,11 @@
             </div>
             <div class="footer__copyright">
                 <div class="footer__copyright--line"></div>
-                © 2022 vginneke.
+                <span class="text">
+                    Copyright </span>©
+                <script>
+                    document.write(new Date().getFullYear());
+                </script><span> All Rights Reserved</span>.
             </div>
         </div>
     </footer>
