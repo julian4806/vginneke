@@ -16,7 +16,7 @@
         <nav class="navigation container">
             <a href="index.html" class="logo-link">
                 <img src="assets/images/logo.png" class="logo" alt="">
-            </a>    
+            </a>
             <ul class="nav-items" style="display: flex;">
                 <li class="item">
                     <a href="./index.html" class="link selected">Home</a>
@@ -24,9 +24,25 @@
                 <li class="item">
                     <a href="./projecten.html" class="link">Projecten</a>
                 </li>
-                <li class="item">
-                    <a href="./ontwerp.html" class="link">Ontwerp</a>
+                <li class="item ontwerp">
+                    <a href="./ontwerp.html" class="link">Ontwerp <span class="desktop">↓</span></a>
+
+                    <!-- dropdown alleen op desktops -->
+                    <div class="dropdown">
+                        <a href="./advies.html" class="link">Begeleiding</a>
+                        <a href="./ontwerp.html" class="link">Advies</a>
+                    </div>
                 </li>
+
+                <!-- alleen op mobiel te zien -->
+                <li class="item mobile">
+                    <a href="./profiel.html" class="link">Profiel</a>
+                </li>
+                <li class="item mobile">
+                    <a href="./profiel.html" class="link">Profiel</a>
+                </li>
+
+
                 <li class="item">
                     <a href="./profiel.html" class="link">Profiel</a>
                 </li>

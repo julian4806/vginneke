@@ -47,12 +47,28 @@
 
       & > .nav-items {
         & > .item {
-          & > .link {
+          .link {
             color: variables.$primary-color;
           }
         }
         & > .item-contact {
           display: none;
+        }
+
+        & > .ontwerp {
+          &:hover .dropdown {
+            display: flex;
+          }
+          position: relative;
+
+          & > .dropdown {
+            position: absolute;
+            display: none;
+            flex-direction: column;
+            gap: 5px;
+            background-color: variables.$secondary-color;
+            padding: 5px 20px 5px 0;
+          }
         }
       }
 
@@ -64,6 +80,10 @@
         display: none;
       }
     }
+  }
+
+  .mobile {
+    display: none;
   }
 }
 
@@ -89,6 +109,12 @@
             color: variables.$secondary-color;
           }
         }
+
+        & > .ontwerp {
+          & > .dropdown {
+            display: none;
+          }
+        }
       }
 
       & > .hamburger {
@@ -105,5 +131,9 @@
         }
       }
     }
+  }
+
+  .desktop {
+    display: none;
   }
 }

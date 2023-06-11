@@ -30,9 +30,9 @@
     }
 
     .ontwerphero__links {
+      list-style-position: inside;
       .ontwerphero__links--link {
-        margin: 4px 2px;
-        cursor: pointer;
+        margin: 0 5px;
       }
     }
   }
